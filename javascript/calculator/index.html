@@ -1,40 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="index.js"></script>
-    <title>Document</title>
+    <title>JS CALCULATOR</title>
 </head>
 <body>
-    <div id="main-container">
-        <div id="tela"><p id="texto">0</p></div>
-        <div id="btn-operators">
-            <button class="op-btn">+</button>
-            <button class="op-btn">-</button>
-            <button class="op-btn">/</button>
-            <button class="op-btn">*</button>
-            <button class="op-btn">=</button>
-            <button class="op-btn">C</button>
-            <button class="op-btn">%</button>
-        </div>
-        <div id="btn-numbers">
-            <button class="num-btn">1</button>
-            <button class="num-btn">2</button>
-            <button class="num-btn">3</button>
-            <button class="num-btn">4</button>
-            <button class="num-btn">5</button>
-            <button class="num-btn">6</button>
-            <button class="num-btn">7</button>
-            <button class="num-btn">8</button>
-            <button class="num-btn">9</button>
-            <button class="num-btn">0</button>
-            <button class="num-btn">,</button>
-            <button class="num-btn" id="equal">=</button>
+    <div id="calculator">
+        <div id="tela">0</div>
+        <div id="calc-buttons">
+            <button class="op-btn" data-action="add">+</button>
+            <button class="op-btn" data-action="subtract">-</button>
+            <button class="op-btn" data-action="divide">/</button>
+            <button class="op-btn" data-action="multiply">*</button>
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>0</button>
+            <button data-action="decimal">.</button>
+            <button data-action="clear">AC</button>
+            <button id="equal" data-action="calculate">=</button>
         </div>
     </div>
     
+    <script src="index.js"></script>
 </body>
 </html>
