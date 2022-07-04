@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    body{
+      background-color: rgba(27, 27, 27, 0.998);
+      color: aliceblue;
+    }
+    .container {
+      margin: 10% auto;
+    }
+
+    button {
+      border: unset;
+    }
+
+    .card-body {
+      color: black;
+    }
+  </style>
+
+</head>
+
+
+<body>
+  <div class="container">
+    <h3>Teste de JS</h3>
+    <div class="input-group mb-3">
+      <input type="text" name="nome" id="text" class="form-control" placeholder="Qualquer texto">
+      <button class="btn btn-outline-danger" id="btn" value="envia">enviar</button>
+    </div>
+    <div class="d-flex align-items-center visually-hidden" id="load">
+      <strong>Loading...</strong>
+      <div class="spinner-border ms-auto" role="status" aria-hidden="true"></div>
+    </div>
+    <div class="card">
+      <div class="card-body" id="new-text">
+        Aqui vai o seu texto
+      </div>
+    </div>
+    <button class="btn btn-outline-danger" id="btn-count" type="button" style="margin-top:1.5%;">Conta</button>
+    <div class="card" style="margin-top:1.5%;">
+      <div class="card-body" id="contagem">
+        Contagem: 
+      </div>
+    </div>  
+  </div>
+  
+
+  <script>
+    let newText = document.getElementById('new-text');
+    const button = document.getElementById('btn'); 
+    const texto = document.getElementById('text');
+    const load = document.getElementById('load');
+    const btnCount = document.getElementById('btn-count');
+    const contagem = document.getElementById('contagem');
+    
+    button.addEventListener('click', () => {
+      load.classList.remove('visually-hidden');
+      newText.style.display = 'none'
+      setInterval(() => {
+        newText.style.display = 'flex'
+        newText.innerHTML = `<b>Novo texto:</b>"${texto.value}"`;
+        load.classList.add('visually-hidden')
+      }, 2000);
+      
+      if(texto.value === '') {
+        alert("Insira algum dado!!");
+        texto.focus();
+        newText.textContent = "Texto" 
+      }
+    })
+
+    let cont = 0;
+    btnCount.addEventListener('click', () => {
+      cont += 1;
+      contagem.innerHTML = `Contagem: ${cont}`;
+    })
+  
+  </script>
+</body>
+</html>
