@@ -29,15 +29,6 @@ body {
     height: 70%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    column-gap: 1.5%;
-    row-gap: 1.5%;
-}
-
-button.op-btn {
-    border: 1px solid rgb(95, 95, 95);
-    background-color: rgb(184, 184, 184);
-    width: 100%;
-    height: 100%;
 }
 
 #equal {
@@ -46,8 +37,4 @@ button.op-btn {
     grid-row-end: 6;
     background-color: #fd6c00;
     border: 1px solid grey;
-}
-
-.is-depressed {
-    background-color: antiquewhite;
 }
