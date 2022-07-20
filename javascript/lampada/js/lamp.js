@@ -5,17 +5,10 @@ const turnOff = document.getElementById("turn-off");
 let lightOn = false;
 
 turnOn.addEventListener("click", () => {
-  lightOn = true;
+  lightOn = !lightOn;
   if (lightOn) {
     lamp.src = "/img/ligada.jpg";
-  }
-});
-
-turnOff.addEventListener("click", () => {
-  if (lightOn) {
-    lightOn = false;
-  }
-  if (lightOn === false) {
+  } else {
     lamp.src = "/img/desligada.jpg";
   }
 });

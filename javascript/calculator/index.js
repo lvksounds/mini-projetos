@@ -66,7 +66,8 @@ keys.addEventListener('click', e => {
             display.textContent = displayedNum + '.';
         }
         // remove a classe is-depressed de todos as teclas
-        Array.from(key.parentNode.children).forEach(k => k.classList.remove('is-depressed'))
+        Array.from(key.parentNode.children)
+        .forEach(k => k.classList.remove('is-depressed'))
         
     }
 })
