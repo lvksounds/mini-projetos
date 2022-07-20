@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      div {
+      }
+    </style>
+  </head>
+  <body class="bg-[#e3e3e3]">
+    <header class="text-4xl text-center border h-12 bg-white">
+      <h1>Guess<span class="text-[#003385]"> Number</span></h1>
+    </header>
+    <section
+      class="flex flex-col items-center justify-between ml-auto mr-auto mt-32 w-2/5 border rounded-lg p-4 h-3/4"
+    >
+      <div
+        id="container1"
+        class="flex flex-col justify-between items-center border bg-[#0bbad3] w-full h-2/5 rounded-lg mb-3"
+      >
+        <h4 class="text-white mb-3">Digite um numero (0-10)</h4>
+        <input
+          id="num-input"
+          type="number"
+          class="p-2"
+          placeholder="Tente adivinhar..."
+        />
+        <button
+          id="play"
+          class="w-24 rounded-sm p-1 bg-[#003385] text-white m-4 hover:bg-white hover:border-collapse hover:text-[#003385] focus:ring-0"
+        >
+          Tentar
+        </button>
+      </div>
+      <div
+        id="container2"
+        class="flex flex-col justify-around items-center border w-full bg-white h-[16rem] rounded-lg p-4"
+      >
+        <h3>Adivinhe o número sorteado!</h3>
+        <p id="show-answer">mostra resposta</p>
+        <p id="try-again">Tentativas: 0</p>
+        <button
+          id="btn-try-again"
+          class="w-36 rounded-sm p-1 bg-[#003385] text-white hover:bg-white hover:text-[#003385] hover:border-collapse hover:border-[#003385]"
+        >
+          Tentar novamente
+        </button>
+      </div>
+      <button
+        id="play-again"
+        class="w-36 rounded-sm p-1 bg-[#3c72c9] text-white hover:bg-white hover:text-[#003385] hover:border-collapse hover:border-[#003385] m-3"
+      >
+        Jogar novamente
+      </button>
+    </section>
+
+    <script src="/js/guessNumber.js"></script>
+  </body>
+</html>

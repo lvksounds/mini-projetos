@@ -1,0 +1,5 @@
+- style: ok 
+js: 
+  - setar componentes: x
+  - função principal: objeto {tentativas, função que gera o num (Math)}: x
+  - lógica dos componentes quando ocorre as tentativas: x
