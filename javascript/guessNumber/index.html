@@ -6,12 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-      div {
-      }
-    </style>
+    <style></style>
   </head>
-  <body class="bg-[#e3e3e3]">
+  <body class="bg-[#e3e3e3]" id="body">
     <header class="text-4xl text-center border h-12 bg-white">
       <h1>Guess<span class="text-[#003385]"> Number</span></h1>
     </header>
@@ -20,7 +17,7 @@
     >
       <div
         id="container1"
-        class="flex flex-col justify-between items-center border bg-[#0bbad3] w-full h-2/5 rounded-lg mb-3"
+        class="flex flex-col justify-between items-center border bg-[#0bbad3] w-full h-2/5 rounded-lg mb-3 p-2"
       >
         <h4 class="text-white mb-3">Digite um numero (0-10)</h4>
         <input
@@ -33,22 +30,15 @@
           id="play"
           class="w-24 rounded-sm p-1 bg-[#003385] text-white m-4 hover:bg-white hover:border-collapse hover:text-[#003385] focus:ring-0"
         >
-          Tentar
+          Jogar
         </button>
       </div>
       <div
         id="container2"
-        class="flex flex-col justify-around items-center border w-full bg-white h-[16rem] rounded-lg p-4"
+        class="flex flex-col justify-around items-center border w-full bg-white h-3/5 rounded-lg p-4"
       >
-        <h3>Adivinhe o número sorteado!</h3>
-        <p id="show-answer">mostra resposta</p>
-        <p id="try-again">Tentativas: 0</p>
-        <button
-          id="btn-try-again"
-          class="w-36 rounded-sm p-1 bg-[#003385] text-white hover:bg-white hover:text-[#003385] hover:border-collapse hover:border-[#003385]"
-        >
-          Tentar novamente
-        </button>
+        <h3 id="status">Adivinhe o número sorteado!</h3>
+        <p id="tentativas">Tentativas: 0</p>
       </div>
       <button
         id="play-again"
