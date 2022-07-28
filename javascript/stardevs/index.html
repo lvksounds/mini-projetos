@@ -12,6 +12,7 @@
       href="https://fonts.googleapis.com/css2?family=Mukta:wght@300&family=Nunito:wght@200;600;700&display=swap"
       rel="stylesheet"
     />
+    <script src="./js/stardevs.js" defer></script>
   </head>
   <body>
     <header>
@@ -30,7 +31,7 @@
           <div class="card-container">
             <div class="card-main">
               <span>Naves Estelares</span>
-              <h2 id="persons">Carregando...</h2>
+              <h2 id="starships">Carregando...</h2>
             </div>
             <img src="./img/starship.svg" alt="imagens naves Estelares" />
           </div>
@@ -38,19 +39,19 @@
           <div class="card-container">
             <div class="card-main">
               <span>Planetas</span>
-              <h2 id="persons">Carregando...</h2>
+              <h2 id="planets">Carregando...</h2>
             </div>
             <img src="./img/planet.svg" alt="imagens planetas" />
           </div>
         </section>
 
         <section class="phrases-container">
-          <button id="btn-phrases">Ler uma frase!</button>
+          <button id="btn-phrases" onclick="loadPhrase()">
+            Ler uma frase!
+          </button>
           <p id="phrase">aksdfhkajsdhkajsdf</p>
         </section>
       </main>
     </header>
-
-    <script src="./js/stardevs.js"></script>
   </body>
 </html>
