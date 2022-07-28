@@ -25,16 +25,23 @@ function getData(param) {
 }
 
 function loadPhrase() {
+  const btn = document.getElementById("btn-phrases");
   const phrase = document.getElementById("phrase");
-  const btnphrases = document.getElementById("btn-phrases");
+
   return fetch(
     "https://swquotesapi.digitaljedi.dk/api/SWQuote/RandomStarWarsQuote"
   )
     .then((data) => data.json())
     .then((json) => {
-      console.log(json);
-      btnphrases.innerHTML = "Ver mais uma frase!";
-      phrase.innerHTML = "";
+      btn.innerHTML = "Ver mais uma frase!";
+      phrase.innerHTML = `${json.content}`;
+
+      phrase.animate(
+        [{ transform: "translateY(-70px)" }, { transform: "translateY(0px)" }],
+        {
+          duration: 500,
+        }
+      );
     })
-    .catch((err) => console.log("erro: ", err));
+    .catch((err) => console.log(err));
 }
