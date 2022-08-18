@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Validação de formulário</title>
+  </head>
+  <body>
+    <section id="form-container">
+      <form action="" name="formulario" method="post">
+        <fieldset id="field1">
+          <label for="nome">Nome:</label>
+          <input type="text" placeholder="Insira seu nome" name="nome" />
+
+          <label for="sobrenome">Sobrenome:</label>
+          <input
+            type="text"
+            name="sobrenome"
+            placeholder="Insira seu sobrenome"
+          />
+          <label for="email">E-mail:</label>
+          <input type="email" name="email" placeholder="Insira seu e-mail" />
+          <label for="senha">Senha:</label>
+          <input type="password" name="senha" placeholder="Insira sua senha" />
+        </fieldset>
+
+        <fieldset id="field2">
+          <label for="telefone">Telefone:</label>
+          <input
+            type="number"
+            name="telefone"
+            placeholder="Insira seu telefone"
+          />
+
+          <label for="cep">CEP:</label>
+          <input type="number" name="cep" placeholder="Insira seu CEP" />
+
+          <label for="sexo">Sexo:</label>
+          <input type="text" name="sexo" placeholder="Insira seu sexo" />
+
+          <label for="newsletter">Newsletter:</label>
+          <input
+            type="checkbox"
+            name="newsletter"
+            placeholder="Desejo receber noticias"
+          />
+        </fieldset>
+      </form>
+    </section>
+  </body>
+</html>

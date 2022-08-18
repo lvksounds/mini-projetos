@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #fd7d00;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+section#form-container {
+  background-color: #fff;
+  width: 33rem;
+  margin: 9rem auto;
+  display: flex;
+  flex-direction: column;
+  padding: 3px;
+}
+
+fieldset {
+  padding: 2rem;
+}
+
+#field1 {
+  border: none;
+  display: flex;
+  flex-direction: column;
+}
+
+#field1 > input {
+  width: 100%;
+}
+
+#field2 {
+  border: none;
+  display: grid;
+}
+
+input {
+  width: 50%;
+}
