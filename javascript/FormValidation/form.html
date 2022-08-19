@@ -2,52 +2,103 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Cadastro | Biblioteca</title>
     <link rel="stylesheet" href="style.css" />
-    <title>Validação de formulário</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="validation.js"></script>
   </head>
   <body>
-    <section id="form-container">
-      <form action="" name="formulario" method="post">
-        <fieldset id="field1">
+    <div class="wrapper">
+      <!-- Formulário -->
+      <form action="" id="formulario" method="POST">
+        <legend>Cadastro Biblioteca</legend>
+        <div class="input-group">
           <label for="nome">Nome:</label>
-          <input type="text" placeholder="Insira seu nome" name="nome" />
-
+          <input
+            type="text"
+            name="nome"
+            id="nome"
+            placeholder="Insira seu nome"
+            required
+          />
+        </div>
+        <div class="input-group">
           <label for="sobrenome">Sobrenome:</label>
           <input
             type="text"
-            name="sobrenome"
+            id="sobrenome"
             placeholder="Insira seu sobrenome"
+            name="sobrenome"
+            required
           />
+        </div>
+        <div class="input-group">
           <label for="email">E-mail:</label>
-          <input type="email" name="email" placeholder="Insira seu e-mail" />
+          <input
+            type="email"
+            id="email"
+            placeholder="Insira seu e-mail"
+            name="email"
+            required
+          />
+        </div>
+        <div class="input-group">
           <label for="senha">Senha:</label>
-          <input type="password" name="senha" placeholder="Insira sua senha" />
-        </fieldset>
-
-        <fieldset id="field2">
-          <label for="telefone">Telefone:</label>
           <input
-            type="number"
-            name="telefone"
-            placeholder="Insira seu telefone"
+            type="password"
+            id="senha"
+            placeholder="Insira a senha"
+            name="senha"
+            required
           />
-
-          <label for="cep">CEP:</label>
-          <input type="number" name="cep" placeholder="Insira seu CEP" />
-
-          <label for="sexo">Sexo:</label>
-          <input type="text" name="sexo" placeholder="Insira seu sexo" />
-
-          <label for="newsletter">Newsletter:</label>
-          <input
-            type="checkbox"
-            name="newsletter"
-            placeholder="Desejo receber noticias"
-          />
-        </fieldset>
+        </div>
+        <div class="colunas">
+          <div class="input-group">
+            <label for="telefone">Telefone:</label>
+            <input
+              type="text"
+              id="telefone"
+              placeholder="Insira seu Telefone"
+              name="telefone"
+            />
+          </div>
+          <div class="input-group">
+            <label for="cep">CEP:</label>
+            <input
+              type="text"
+              id="cep"
+              placeholder="Insira seu CEP"
+              name="cep"
+            />
+          </div>
+        </div>
+        <div class="colunas">
+          <div class="input-group">
+            <label for="sexo">Sexo:</label>
+            <select name="sexo" id="sexo">
+              <option value="" selected disabled>informar...</option>
+              <option value="m">Masculino</option>
+              <option value="f">Feminino</option>
+              <option value="x">Não informar</option>
+            </select>
+          </div>
+          <div class="input-group">
+            <label for="newsletter">Newsletter</label>
+            <input type="checkbox" id="newsletter" name="news" />
+            <small>Desejo receber novidades</small>
+          </div>
+        </div>
+        <div class="footer">
+          <button type="button" class="botao" onclick="validar()">
+            Enviar
+          </button>
+        </div>
       </form>
-    </section>
+    </div>
   </body>
 </html>
