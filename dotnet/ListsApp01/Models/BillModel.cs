@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace ListsApp01.Models
 {
@@ -12,5 +13,10 @@ namespace ListsApp01.Models
         public double Amount { get; set; }
         public string Group { get; set; }
 
+    }
+
+    public class BillList
+    {
+        public List<BillModel> BilssList { get; } = new();
     }
 }
