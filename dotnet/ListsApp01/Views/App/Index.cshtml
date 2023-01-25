@@ -1,0 +1,173 @@
+﻿<div class="container-fluid ">
+    
+    <!--HEADER-->
+    <div class="row d-flex border-bottom w-75 mx-auto py-2 align-items-center justify-content-center">
+
+        <div class="col-4">
+            <select class="form-select form-select-sm "
+                    aria-label=".form-select-lg example">
+                <option class="text-muted" selected>Selecione a categoria</option>
+                <option value="1">Supermercado</option>
+                <option value="2">Farmacia</option>
+                <option value="3">Outros</option>
+            </select>
+        </div>
+        <div class="col-4">
+            <select class="form-select form-select-sm "
+                    aria-label=".form-select-lg example">
+                <option class="text-muted" selected>Selecione o mês</option>
+                <option value="1">Janeiro</option>
+                <option value="2">Fevereiro</option>
+                <option value="3">Março</option>
+                <option value="4">Abril</option>
+                <option value="5">Maio</option>
+                <option value="6">Junho</option>
+                <option value="7">Julho</option>
+                <option value="8">Agosto</option>
+                <option value="9">Setembro</option>
+                <option value="10">Outubro</option>
+                <option value="11">Novembro</option>
+                <option value="12">Dezembro</option>
+            </select>
+        </div>
+        <div class="col-4">
+            <button class="btn btn-sm w-100 btn-primary" id="add-record">Novo categoria</button>
+        </div>
+
+        <!--CONTENT-->
+
+
+        <div class="col my-2" id="content">
+            <h4 class="text-center text-primary">Registros - Janeiro</h4>
+
+            <div class="row justify-content-center">
+
+
+                <div class="col col-md-3 card m-1 shadow">
+                    <div class="card-body">
+                        <div class="row text-center">
+                            <h5 class="card-title">Supermercado</h5>
+                        </div>
+                        <div class="row">
+
+                            <ul class="text-center">
+                                <li>
+                                    <div class="d-flex gap-1 justify-content-center">
+                                        <p class="fw-bold">Dia 02 -</p>
+                                        <span class="text-muted">10 itens</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="d-flex gap-1 justify-content-center">
+                                        <p class="fw-bold">Dia 05 -</p>
+                                        <span class="text-muted">2 itens</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="d-flex gap-1 justify-content-center">
+                                        <p class="fw-bold">Dia 16 -</p>
+                                        <span class="text-muted">4 itens</span>
+                                    </div>
+                                </li>
+
+                                <a class="text-primary">Editar</a>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-md-3 card m-1 shadow">
+                    <div class="card-body">
+                        <div class="row text-center">
+                            <h5 class="card-title">Farmácia</h5>
+                        </div>
+                        <div class="row">
+
+                            <ul class="text-center">
+                                <li>
+                                    <div class="d-flex gap-1 justify-content-center">
+                                        <p class="fw-bold">Dia 02 -</p>
+                                        <span class="text-muted">10 itens</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="d-flex gap-1 justify-content-center">
+                                        <p class="fw-bold">Dia 05 -</p>
+                                        <span class="text-muted">2 itens</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="d-flex gap-1 justify-content-center">
+                                        <p class="fw-bold">Dia 16 -</p>
+                                        <span class="text-muted">4 itens</span>
+                                    </div>
+                                </li>
+
+                                <a class="text-primary">Editar</a>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-md-3 card m-1 shadow">
+                    <div class="card-body">
+                        <div class="row text-center">
+                            <h5 class="card-title">Outros</h5>
+                        </div>
+                        <div class="row">
+
+                            <ul class="text-center">
+                                <li>
+                                    <div class="d-flex gap-1 justify-content-center">
+                                        <p class="fw-bold">Dia 02 -</p>
+                                        <span class="text-muted">10 itens</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="d-flex gap-1 justify-content-center">
+                                        <p class="fw-bold">Dia 05 -</p>
+                                        <span class="text-muted">2 itens</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="d-flex gap-1 justify-content-center">
+                                        <p class="fw-bold">Dia 16 -</p>
+                                        <span class="text-muted">4 itens</span>
+                                    </div>
+                                </li>
+
+                                <a class="text-primary">Editar</a>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+
+    <!--MODAIS-->
+
+    <div class="modal fade" tabindex="-2" id="modal">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content" id="modal-content">
+                <div class="modal-body m-0 p-0" id="modal-body">
+                    <p>Modal body text goes here.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="message-modal" tabindex="-1" aria-labelledby="message-modal" aria-hidden="true">
+        <div class="modal-dialog w-50 mt-5">
+            <div class="modal-content" id="message-modal-content">
+                <div class="modal-header alert-danger" id="message-modal-header">
+                    <h5 class="modal-title" id="message-modal-title">Atenção</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center h5 p-5" id="message-modal-body">
+                </div>
+            </div>
+        </div>
+    </div>
+

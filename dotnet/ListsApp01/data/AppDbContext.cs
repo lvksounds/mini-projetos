@@ -1,5 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
-
+﻿using ListsApp01.Models;
+using Microsoft.EntityFrameworkCore;
 namespace ListsApp01.data
 {
     public class AppDbContext : DbContext
@@ -8,5 +8,8 @@ namespace ListsApp01.data
         {
             
         }
+
+        // instancia da classe que queremos mapear;
+        public DbSet<Bill> Bills { get; set; }
     }
 }
