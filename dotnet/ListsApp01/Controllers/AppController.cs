@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Routing;
 
 namespace ListsApp01.Controllers
 {
@@ -8,5 +9,12 @@ namespace ListsApp01.Controllers
         {
             return View();
         }
+
+        [Route("add-categorie")]
+        public IActionResult AddCategorie()
+        {
+            return View();
+        }
+
     }
 }

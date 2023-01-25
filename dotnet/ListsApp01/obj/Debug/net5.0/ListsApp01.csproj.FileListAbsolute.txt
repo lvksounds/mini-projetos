@@ -60,3 +60,4 @@ C:\Users\lucas.freitas\Documents\mini-projetos\dotnet\ListsApp01\obj\Debug\net5.
 C:\Users\lucas.freitas\Documents\mini-projetos\dotnet\ListsApp01\obj\Debug\net5.0\ListsApp01.genruntimeconfig.cache
 C:\Users\lucas.freitas\Documents\mini-projetos\dotnet\ListsApp01\obj\Debug\net5.0\ref\ListsApp01.dll
 C:\Users\lucas.freitas\Documents\mini-projetos\dotnet\ListsApp01\obj\Debug\net5.0\Razor\Views\App\Index.cshtml.g.cs
+C:\Users\lucas.freitas\Documents\mini-projetos\dotnet\ListsApp01\obj\Debug\net5.0\Razor\Views\App\AddCategorie.cshtml.g.cs
