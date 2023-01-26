@@ -148,7 +148,22 @@
 
     <!--MODAIS-->
 
-    <div class="modal fade" tabindex="-2" id="modal" />
+    <div class="modal fade" tabindex="-2" id="modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Detalhes do produto</h4>
+                </div>
+                <div class="modal-body">
+                    <hr />
+                    @Model.Description
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div>
 
    @* <div class="modal fade" id="message-modal" tabindex="-1" aria-labelledby="message-modal" aria-hidden="true">
         <div class="modal-dialog w-50 mt-5">

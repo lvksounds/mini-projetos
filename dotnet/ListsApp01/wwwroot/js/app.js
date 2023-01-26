@@ -11,8 +11,9 @@ const addCategorie = getElement("#add-categorie");
 // funções
 addCategorie.addEventListener("click", ev => {
     fetch("add-categorie").then(res => res.text()).then(html => {
-        getElement("#modal").innerHTML = html;
-        mainModal.show();
+        /* getElement("#modal").innerHTML = html;*/
+        /*mainModal.show();*/
+        console.log(html);
     });
 
 })
